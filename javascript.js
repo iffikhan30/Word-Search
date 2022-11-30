@@ -13,7 +13,6 @@ var exist = function(board, word) {
   const go = (x, y, k) => {
     if (board[x][y] !== word[k]) return false;
     if (k === word.length - 1) return true;
-
     board[x][y] = '*'; // mark as visited
     for (const [dx, dy] of dirs) {
       const i = x + dx;
