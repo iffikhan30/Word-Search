@@ -20,6 +20,7 @@ var exist = function(board, word) {
       if (i >= 0 && i < h && j >= 0 && j < w) {
         if (go(i, j, k + 1)) return true;
       }
+      console.log(i);
     }
     board[x][y] = word[k]; // reset
     return false;
@@ -34,3 +35,4 @@ var exist = function(board, word) {
   return false;
 
 };
+exist('[a,b,c,d]','d');
