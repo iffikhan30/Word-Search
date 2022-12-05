@@ -17,6 +17,7 @@ var exist = function(board, word) {
     for (const [dx, dy] of dirs) {
       const i = x + dx;
       const j = y + dy;
+      const z = i + j;
       if (i >= 0 && i < h && j >= 0 && j < w) {
         if (go(i, j, k + 1)) return true;
       }
