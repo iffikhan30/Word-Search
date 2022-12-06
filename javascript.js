@@ -36,4 +36,4 @@ var exist = function(board, word) {
   return false;
 
 };
-exist('[a,b,c,d]','d');
+exist('[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]','d');
