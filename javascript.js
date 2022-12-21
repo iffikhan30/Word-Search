@@ -1,6 +1,6 @@
 /**
  * @param {character[][]} board
- * @param {string} word
+ * @param {string} word here
  * @return {boolean}
  */
 var exist = function(board, word) {
