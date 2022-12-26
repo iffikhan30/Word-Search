@@ -22,6 +22,7 @@ var exist = function(board, word) {
         if (go(i, j, k + 1)) return true;
       }
       console.log(i);
+      console.log(y);
     }
     board[x][y] = word[k]; // reset
     return false;
